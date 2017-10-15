@@ -1,0 +1,24 @@
+html,
+body,
+#map-id {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: relative;
+}
+
+#map-id,
+#map-id__text {
+    position: absolute;
+}
+
+#map-id__text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
