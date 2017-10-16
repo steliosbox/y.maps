@@ -1,16 +1,12 @@
+'use strict';
+
 import './stylesheets/style.scss';
-let map = require('./ymaps');
-// let mapEvents = require('./ymaps/ymap.events');
+import './stylesheets/flaticon.scss';
+import './stylesheets/popup.scss';
+let map = require('./javascripts/ymaps');
+let events = require('./javascripts/events');
 
 ymaps.ready(() => {
-    
     console.log('ymaps ready');
-    
-    map.init().then(function () {
-    
-        map.events.click(function (data) {
-            
-            console.log(data);
-        });
-    })
+    map.init().then(() => events.click());
 });

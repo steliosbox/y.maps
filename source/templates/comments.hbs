@@ -1,0 +1,14 @@
+{{#if comments}}
+    {{#each comments}}
+        <div class="sql__content">
+            <div class="sql__header">
+                <span class="sql__author">{{name}}</span>
+                <span class="sql__place">{{place}}</span>
+                <span class="sql__time">{{time}}</span>
+            </div>
+            <div class="sql__message">{{comment}}</div>
+        </div>
+    {{/each}}
+{{else}}
+    <span class="sql__empty">Отзывов пока нет...</span>
+{{/if}}

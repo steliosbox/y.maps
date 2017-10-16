@@ -1,7 +1,5 @@
 'use strict';
 
-let events = require('./ymap.events');
-
 module.exports = {
     
     geolocation: function () {
@@ -27,8 +25,6 @@ module.exports = {
         
         ymaps.map.geoObjects.add(ymaps.clusterer);
     },
-    
-    events: events,
     
     init: function () {
         return this.geolocation()
